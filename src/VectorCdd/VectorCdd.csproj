@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>2.0.0.0-alpha</Version>
+    <Description>用于解析 CANoe 软件的 .cdd 文件。</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Authors>eric-yr-yang</Authors>
+    <PackageReleaseNotes>能够自动解析 DID 数据内容。</PackageReleaseNotes>
+    <RootNamespace>DiagnosticTool.Utilities.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <AssemblyName>DiagnosticTool.Utilities.$(MSBuildProjectName)</AssemblyName>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
+  </ItemGroup>
+
+</Project>
