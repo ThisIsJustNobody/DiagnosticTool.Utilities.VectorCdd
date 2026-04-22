@@ -106,7 +106,3 @@ src/
 │   └── XmlParser/          # XML 序列化工具
 └── VectorCdd.Tests/        # 测试项目（MSTest）
 ```
-
-## 资源文件
-
-`Resource/` 目录下提供了多个示例 `.cdd` 文件（FLR3.cdd、RNA_SWEET500_new.cdd、Zeekr_PECU.cdd 等），可用于测试和参考。

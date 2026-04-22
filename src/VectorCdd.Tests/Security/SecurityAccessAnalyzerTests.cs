@@ -9,6 +9,7 @@ using DiagnosticTool.Utilities.VectorCdd.TestHelpers;
 namespace DiagnosticTool.Utilities.VectorCdd.Security;
 
 [TestClass]
+[TestCategory("Integration")]
 public class SecurityAccessAnalyzerTests
 {
     [TestMethod]

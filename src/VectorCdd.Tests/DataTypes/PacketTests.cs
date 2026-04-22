@@ -80,6 +80,7 @@ namespace DiagnosticTool.Utilities.VectorCdd.DataTypes
         [DataRow(0xFD46u, "00 00 00 00 BF D9 99 9A BF 80 00 00 BF 33 33 33 40 D8 90 00 41 28 66 00 40 9C 72 00 00 00 00 00 00 59 00 64 00 00 0A 98 0D 28 00 00")]
         [DataRow(0xFD45u, "C1 C8 00 00 3F 80 00 00 C1 A0 00 00 00 00 00 00 3F 7A E1 48 3F 7A E1 48 3F 7A E1 48")]
         [DataRow(0xFD20u, "33 20 33 20 0C D8 03 34 13 9B 00 00 00 00 00 00")]
+        [TestCategory("Integration")]
         public void ConvertTest(uint dataId, string input)
         {
             var candela = CddTestData.Flr3;

@@ -10,6 +10,7 @@ using DiagnosticTool.Utilities.VectorCdd.TestHelpers;
 namespace DiagnosticTool.Utilities.VectorCdd.DataIdentities;
 
 [TestClass]
+[TestCategory("Integration")]
 public class DataIdentityTests
 {
     /// <summary>

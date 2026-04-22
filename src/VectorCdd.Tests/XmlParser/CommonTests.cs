@@ -88,6 +88,7 @@ namespace DiagnosticTool.Utilities.VectorCdd.XmlParser
         }
 
         [TestMethod()]
+        [TestCategory("Integration")]
         public void DeserializeXmlToObjectTest1()
         {
             var candela = CddTestData.Sweet500;

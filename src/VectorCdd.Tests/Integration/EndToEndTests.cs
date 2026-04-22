@@ -11,6 +11,7 @@ using DiagnosticTool.Utilities.VectorCdd.TestHelpers;
 namespace DiagnosticTool.Utilities.VectorCdd.Integration;
 
 [TestClass]
+[TestCategory("Integration")]
 public class EndToEndTests
 {
     /// <summary>
