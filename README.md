@@ -1,4 +1,4 @@
-# CddReaderLib
+# VectorCdd
 
 用于解析 Vector CANoe 软件的 `.cdd`（CANdela Diagnostic Description）文件的 C# 类库。`.cdd` 文件基于 CANDELA XML 格式，描述了 ECU 诊断的完整规范，包括数据类型、数据标识符（DID）、协议服务、诊断类等。
 
@@ -6,7 +6,7 @@
 
 ## 环境要求
 
-- .NET 8.0
+- .NET 10.0
 
 ## 构建与测试
 
@@ -19,8 +19,8 @@ dotnet pack   # 生成 NuGet 包（配置了 GeneratePackageOnBuild）
 ## 快速上手
 
 ```csharp
-using CddReaderLib.Common;
-using CddReaderLib.XmlParser;
+using DiagnosticTool.Utilities.VectorCdd.Common;
+using DiagnosticTool.Utilities.VectorCdd.XmlParser;
 
 // 1. 读取并解析 .cdd 文件
 var xml = File.ReadAllText("sample.cdd");
@@ -90,8 +90,8 @@ Console.WriteLine(result.DisplayText());
 ## 目录结构
 
 ```
-src/CddReaderLib/
-├── CddReaderLib/           # 主库
+src/
+├── VectorCdd/              # 主库
 │   ├── Common/             # 基类与共享类型
 │   ├── DataTypes/          # 数据类型定义
 │   ├── DataIdentities/     # DID 定义
@@ -104,7 +104,7 @@ src/CddReaderLib/
 │   ├── DefineAttributes/
 │   ├── Authors/
 │   └── XmlParser/          # XML 序列化工具
-└── CddReaderLibTests/      # 测试项目（MSTest）
+└── VectorCdd.Tests/        # 测试项目（MSTest）
 ```
 
 ## 资源文件
