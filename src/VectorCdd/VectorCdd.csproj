@@ -4,16 +4,19 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.0</Version>
-    <Description>用于解析 CANoe 软件的 .cdd 文件。</Description>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <Version>1.0.0-local</Version>
+    <Description>Parser for Vector CANoe .cdd (CANdela Diagnostic Description) files. Deserializes .cdd XML into strongly-typed objects and converts raw UDS diagnostic bytes into human-readable values.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <Authors>eric-yr-yang</Authors>
-    <PackageReleaseNotes>能够自动解析 DID 数据内容。</PackageReleaseNotes>
+    <PackageReleaseNotes>Automatically parse DID data content from .cdd files.</PackageReleaseNotes>
     <RootNamespace>DiagnosticTool.Utilities.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
     <AssemblyName>DiagnosticTool.Utilities.$(MSBuildProjectName)</AssemblyName>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/ThisIsJustNobody/DiagnosticTool.Utilities.VectorCdd.git</RepositoryUrl>
+    <PackageTags>cdd; vector; canoe; diagnostic; uds; automotive</PackageTags>
+    <PackageProjectUrl>https://github.com/ThisIsJustNobody/DiagnosticTool.Utilities.VectorCdd</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
