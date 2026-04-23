@@ -1,5 +1,7 @@
 /*
 !/.gitignore
 !/.github
+!/README.md
+!/CLAUDE.md
 !/src/
-!/doc/
+!/docs/

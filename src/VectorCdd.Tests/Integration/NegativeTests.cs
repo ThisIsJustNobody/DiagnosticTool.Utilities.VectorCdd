@@ -104,7 +104,7 @@ public class NegativeTests
     public void Deserialize_InvalidXml_ThrowsException()
     {
         var invalidXml = "<INVALID><UNCLOSED>";
-        Assert.ThrowsException<InvalidOperationException>(
+        Assert.ThrowsExactly<InvalidOperationException>(
             () => invalidXml.DeserializeXmlToObject<CanDela>());
     }
 
